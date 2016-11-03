@@ -4,7 +4,7 @@ class FirstComponent extends React.Component {
     render() {
         return (
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque commodi cum deserunt distinctio, dolor ducimus ea, error fugit impedit iste, labore magnam magni minima nemo nostrum quia quo veniam.</p>
+                <h2>Hello {this.props.name}</h2>
             </div>
         );
     }
