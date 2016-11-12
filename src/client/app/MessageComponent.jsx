@@ -6,7 +6,7 @@ class Message extends React.Component {
         const user = this.props.user;
         let message = null;
         if(isLogin) {
-            message = <h3>Hello {user}</h3>
+            message = <h3>Hello {this.props.children} {user}</h3>
         } else {
             message = <h3>Bye {user}</h3>
         }

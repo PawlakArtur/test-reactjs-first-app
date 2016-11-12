@@ -7,7 +7,7 @@ class Greeting extends React.Component {
         this.state = {
             login: false,
             user: 'Artur'
-        }
+        },
         this.changeLogin = this.changeLogin.bind(this);
         this.changeUser = this.changeUser.bind(this);
     }
@@ -29,8 +29,10 @@ class Greeting extends React.Component {
                 <button onClick={this.changeLogin}>
                     {this.state.login ? 'Logout' : 'Login'}
                 </button>
-                <input type="text" onChange={this.changeUser}/>
-                <MessageComponent isLogin={this.state.login} user={this.state.user}/>
+                <input type="text" onChange={this.changeUser} value={this.state.user}/>
+                <MessageComponent isLogin={this.state.login} user={this.state.user}>
+                    <strong>Dear</strong>
+                </MessageComponent>
             </div>
         );
     }
