@@ -30,7 +30,11 @@ class Lessons extends React.Component {
             'React Without JSX',
             'Reconciliation',
             'Contex',
-            'Web Components'
+            'Web Components',
+            '------',
+            'Wes Bos - Learn Redux',
+            '1, 2, 3, 4, 5, 6, 7, 8'
+
         ];
         const lessonsList = lessons.map((lesson) =>
             <li key={lesson.toString()}>{lesson}</li>

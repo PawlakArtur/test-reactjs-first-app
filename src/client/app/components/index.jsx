@@ -7,7 +7,9 @@ import GreetingComponent from './GreetingComponent.jsx';
 import LessonsComponent from './LessonsComponent.jsx';
 import CompositionComponent from './CompositionComponent.jsx';
 
-import { Router, Route, hashHistory } from 'react-router'
+import { Router, Route, hashHistory } from 'react-router';
+
+require("../styles/style.scss");
 
 class App extends React.Component {
     componentDidMount() {
